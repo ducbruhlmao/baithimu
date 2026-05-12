@@ -103,18 +103,18 @@
     padding: 8px 5px;
     font-size: 12px;
     white-space: nowrap;
-    width: 30px;
+    width: 5px;
     margin: 5px;
     gap: 0;
   }
   .players {
     grid-template-columns: 1fr;
-    width: 100%;
+    width: 95%;
   }
 
   .header {
     padding: 10px;
-    margin: 15px;
+    margin: 15px 0;
   }
 
   .avatar {

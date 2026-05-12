@@ -8,6 +8,14 @@
     overflow-x: hidden;
     width: 100%;
   }
+  .menu {
+    gap: 10px;
+  }
+
+  .menu button {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
   .players {
     grid-template-columns: 1fr;
     width: 95%;

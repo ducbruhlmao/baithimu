@@ -117,13 +117,4 @@
     gap: 10px;
   }
 
-  /* chữ nhỏ hơn cho mobile nhỏ */
-  h1, h2 {
-    font-size: 18px;
-  }
-
-  p {
-    font-size: 14px;
-  }
-
 }

@@ -107,10 +107,10 @@
     margin: 5px;
     gap: 0;
   }
-  .player
+  .header
   {
     margin: 5px;
-    width: 170px;
+    width: 90%;
   }
   .players {
     grid-template-columns: 1fr;

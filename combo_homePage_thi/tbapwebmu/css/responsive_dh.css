@@ -1,6 +1,7 @@
 @media (max-width: 768px) {
   body {
-    padding: 0 10px;
+    padding: 10px;
+      overflow-x: hidden;
   }
   .players {
     grid-template-columns: 1fr;

@@ -107,7 +107,6 @@
   }
   .players {
     grid-template-columns: 1fr;
-    width: 98%;
   }
 
   .header {

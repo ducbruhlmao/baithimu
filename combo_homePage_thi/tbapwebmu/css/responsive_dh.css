@@ -1,13 +1,12 @@
 @media (max-width: 768px) {
-  body {
-    font-family: sans-serif;
-    background: #f4f6f8;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+  * {
     margin: 0;
-    align-items: center;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
     overflow-x: hidden;
+    width: 100%;
   }
 
   .menu {
@@ -79,6 +78,59 @@
     opacity: 1;
     visibility: visible;
   }
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px){
+
+  .menu{
+    display:flex;
+    width:100%;
+  }
+
+  .menu button{
+    flex:1;
+    padding:8px 5px;
+    font-size:12px;
+    white-space:nowrap;
+  }
+
+  .players {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .header {
+    padding: 10px;
+  }
+
+  .avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  .title h2 {
+    font-size: 16px;
+  }
+
+  .player {
+    width: 160px;
+    right: 5px;
+    bottom: -20px;
+  }
+
+  #nav {
+    width: 220px;
+    right: -220px;
+  }
+
+  #nav ul {
+    gap: 15px;
+    padding-left: 15px;
+  }
+
   .footer-container {
     grid-template-columns: 1fr;
   }

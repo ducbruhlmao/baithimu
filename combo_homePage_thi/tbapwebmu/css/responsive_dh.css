@@ -110,7 +110,9 @@
     width: 100%;
   }
   .card.active .content {
-  width: 80%;
+  width: 85%;
+   padding: 10px;
+    margin: 0 15px;
 }
 
   .header {

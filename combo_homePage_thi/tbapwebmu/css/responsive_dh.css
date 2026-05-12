@@ -1,18 +1,18 @@
 @media (max-width: 768px) {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
   body {
+    font-family: sans-serif;
+    background: #f4f6f8;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
     overflow-x: hidden;
-    width: 100%;
   }
 
   .menu {
     display: flex;
     width: 100%;
-    gap: 0;
   }
 
   .menu button {
@@ -20,7 +20,6 @@
     padding: 10px;
     font-size: 14px;
     white-space: nowrap;
-    height: 45px;
   }
   .players {
     grid-template-columns: 1fr;

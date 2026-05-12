@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hang MU</title>
+    <link rel="stylesheet" href="./css/stylee.css" />
+    <link rel="stylesheet" href="./css/animation_dh.css" />
+    <link rel="stylesheet" href="./css/doihinh.css" />
+    <link rel="stylesheet" href="./css/responsive_dh.css" />
+  </head>
+
+  <body>
+    <header class="Banner">
+      <div class="logo">
+        <img src="./anh/anhheader/Man_Utd_FC_.svg.png" alt="" />
+      </div>
+      <nav id="nav">
+        <ul>
+          <li><a href="../index.html">Trang Chủ</a></li>
+          <li><a href="gioithieu.html">Giới Thiệu</a></li>
+          <li><a href="doihinh.html">Đội Hình</a></li>
+          <li><a href="../thidau&lienhe/trandau.html">Thi Đấu</a></li>
+          <li><a href="../combo_video_thi/thongbao.html">Video</a></li>
+          <li><a href="../thidau&lienhe/lienhe.html">Liên Hệ</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="overlay" onclick="toggleMenu()"></div>
+    </header>
+
+    <div class="menu">
+      <button class="active" onclick="showTeam(this)">Đội hình</button>
+      <button onclick="showCoach(this)">Huấn luyện viên</button>
+    </div>
+
+    <div class="players" id="coach">
+      <div class="card">
+        <div class="header" onclick="toggleCard(this)">
+          <img class="avatar" src="./anh/anh_doihinh/avthlv/amorim.png" />
+          <div class="title">
+            <h2>Rúben Amorim</h2>
+            <span>HLV trưởng</span>
+          </div>
+
+          <button>▼</button>
+        </div>
+
+        <div class="content">
+          <div class="info">
+            <p>Quốc tịch: Bồ đào nha</p>
+            <p>Năm sinh: 1985</p>
+            <p><br /><br /></p>
+          </div>
+
+          <img class="player" src="./anh/anh_doihinh/anhhlv/amorim.png" />
+        </div>
+      </div>
+      <div class="card">
+        <div class="header" onclick="toggleCard(this)">
+          <img class="avatar" src="./anh/anh_doihinh/avthlv/carlos.png" />
+          <div class="title">
+            <h2>Carlos Fernandes</h2>
+            <span>Trợ lý HLV</span>
+          </div>
+
+          <button>▼</button>
+        </div>
+
+        <div class="content">
+          <div class="info">
+            <p>Quốc tịch: Bồ đào nha</p>
+            <p>Năm sinh: 1980</p>
+            <p><br /><br /></p>
+          </div>
+
+          <img class="player" src="./anh/anh_doihinh/anhhlv/carlos.png" />
+        </div>
+      </div>
+      <div class="card">
+        <div class="header" onclick="toggleCard(this)">
+          <img class="avatar" src="./anh/anh_doihinh/avthlv/candido.png" />
+          <div class="title">
+            <h2>Adélio Cândido</h2>
+            <span>Trợ lý HLV</span>
+          </div>
+
+          <button>▼</button>
+        </div>
+
+        <div class="content">
+          <div class="info">
+            <p>Quốc tịch: Bồ đào nha</p>
+            <p>Năm sinh: 1976</p>
+            <p><br /><br /></p>
+          </div>
+          <img class="player" src="./anh/anh_doihinh/anhhlv/adelio.png" />
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="header" onclick="toggleCard(this)">
+          <img class="avatar" src="./anh/anh_doihinh/avthlv/ferro.png" />
+          <div class="title">
+            <h2>Emanuel Ferro</h2>
+            <span>Trợ lý HLV</span>
+          </div>
+
+          <button>▼</button>
+        </div>
+
+        <div class="content">
+          <div class="info">
+            <p>Quốc tịch: Bồ đào nha</p>
+            <p>Năm sinh: 1979</p>
+            <p><br /><br /></p>
+          </div>
+          <img class="player" src="./anh/anh_doihinh/anhhlv/ferro.png" />
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="header" onclick="toggleCard(this)">
+          <img class="avatar" src="./anh/anh_doihinh/avthlv/vital.png" />
+          <div class="title">
+            <h2>Jorge Vital</h2>
+            <span>HLV thủ môn</span>
+          </div>
+
+          <button>▼</button>
+        </div>
+
+        <div class="content">
+          <div class="info">
+            <p>Quốc tịch: Bồ đào nha</p>
+            <p>Năm sinh: 1962</p>
+            <p><br /><br /></p>
+          </div>
+          <img class="player" src="./anh/anh_doihinh/anhhlv/vital.png" />
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="header" onclick="toggleCard(this)">
+          <img
+            class="avatar"
+            src="./anh/anh_doihinh/avthlv/Paulo-Barreira.png"
+          />
+          <div class="title">
+            <h2>Paulo Barreira</h2>
+            <span>Chuyên gia phục hồi thể lực</span>
+          </div>
+
+          <button>▼</button>
+        </div>
+
+        <div class="content">
+          <div class="info">
+            <p>Quốc tịch: Bồ đào nha</p>
+            <p>Năm sinh: 1976</p>
+            <p><br /><br /></p>
+          </div>
+          <img class="player" src="./anh/anh_doihinh/anhhlv/paulo.png" />
+        </div>
+      </div>
+    </div>
+
+    <div class="players" id="team">
+      <div class="card">
+        <div class="header" onclick="toggleCard(this)">
+          <img class="avatar" src="./anh/anh_doihinh/avt/sesko.png" />
+          <div class="number">30</div>
+          <div class="title">
+            <h2>Benjamin Šeško</h2>
+            <span>Tiền đạo</span>
+          </div>
+
+          <button>▼</button>
+        </div>
+        <div class="content">
+          <div class="info">
+            <p>Ngày sinh: 31/5/2003</p>
+            <p>Chiều cao: 1,95m</p>
+            <p>Cân nặng: 85kg</p>
+            <p>Quê quán: Slovenia</p>
+          </div>
+          <img class="player" src="./anh/anh_doihinh/anhcauthu/sesko.png" />
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="header" onclick="toggleCard(this)">
+          <img class="avatar" src="./anh/anh_doihinh/avt/bruno.png" />
+
+          <div class="number">8</div>
+
+          <div class="title">
+            <h2>Bruno Fernandes</h2>
+            <span>Tiền vệ</span>
+          </div>
+
+          <button>▼</button>
+        </div>
+
+        <div class="content">
+          <div class="info">
+            <p>Ngày sinh: 21/09/1994</p>
+            <p>Chiều cao: 1,79m</p>
+            <p>Cân nặng: 69kg</p>
+            <p>Quê quán: Bồ đào nha</p>
+          </div>
+
+          <img
+            class="player"
+            src="./anh/anh_doihinh/anhcauthu/8-Bruno-Fernandes1751376414332.png"
+          />
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="header" onclick="toggleCard(this)">
+          <img class="avatar" src="./anh/anh_doihinh/avt/cunha.png" />
+          <div class="number">10</div>
+          <div class="title">
+            <h2>Matheus Cunha</h2>
+            <span>Tiền vệ cánh trái</span>
+          </div>
+          <button>▼</button>
+        </div>
+
+        <div class="content">
+          <div class="info">
+            <p>Ngày sinh: 27/05/1999</p>
+            <p>Chiều cao: 1,83m</p>
+            <p>Cân nặng: 76kg</p>
+            <p>Quê quán: Brazil</p>
+          </div>
+
+          <img class="player" src="./anh/anh_doihinh/anhcauthu/cunha.png" />
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="header" onclick="toggleCard(this)">
+          <img class="avatar" src="./anh/anh_doihinh/avt/mbeumo.png" />
+
+          <div class="number">19</div>
+
+          <div class="title">
+            <h2>Bryan Mbeumo</h2>
+            <span>Tiền vệ cánh phải</span>
+          </div>
+
+          <button>▼</button>
+        </div>
+
+        <div class="content">
+          <div class="info">
+            <p>Ngày sinh: 07/08/1999</p>
+            <p>Chiều cao: 1,71m</p>
+            <p>Cân nặng: 75kg</p>
+            <p>Quê quán: Cameroon</p>
+          </div>
+
+          <img class="player" src="./anh/anh_doihinh/anhcauthu/Mbeumo.png" />
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="header" onclick="toggleCard(this)">
+          <img class="avatar" src="./anh/anh_doihinh/avt/mainoo.png" />
+
+          <div class="number">37</div>
+
+          <div class="title">
+            <h2>Kobbie Mainoo</h2>
+            <span> Tiền vệ phòng ngự trái</span>
+          </div>
+
+          <button>▼</button>
+        </div>
+
+        <div class="content">
+          <div class="info">
+            <p>Ngày sinh: 19/04/2005</p>
+            <p>Chiều cao: 1,81m</p>
+            <p>Cân nặng: 80kg</p>
+            <p>Quê quán: Anh</p>
+          </div>
+
+          <img class="player" src="./anh/anh_doihinh/anhcauthu/mainoo.png" />
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="header" onclick="toggleCard(this)">
+          <img class="avatar" src="./anh/anh_doihinh/avt/caseminro.png" />
+
+          <div class="number">18</div>
+
+          <div class="title">
+            <h2>Casemiro</h2>
+            <span>Tiền vệ phòng ngự phải</span>
+          </div>
+
+          <button>▼</button>
+        </div>
+
+        <div class="content">
+          <div class="info">
+            <p>Ngày sinh: 23/02/1992</p>
+            <p>Chiều cao: 1,85m</p>
+            <p>Cân nặng: 85kg</p>
+            <p>Quê quán: Brazil</p>
+          </div>
+
+          <img
+            class="player"
+            src="./anh/anh_doihinh/anhcauthu/18-Casemiro1751376486567.png"
+          />
+        </div>
+      </div>
+      <div class="card">
+        <div class="header" onclick="toggleCard(this)">
+          <img class="avatar" src="./anh/anh_doihinh/avt/shaw.png" />
+
+          <div class="number">23</div>
+
+          <div class="title">
+            <h2>Luke Shaw</h2>
+            <span>Hậu vệ cánh trái</span>
+          </div>
+
+          <button>▼</button>
+        </div>
+
+        <div class="content">
+          <div class="info">
+            <p>Ngày sinh: 12/07/1995</p>
+            <p>Chiều cao: 1,78m</p>
+            <p>Cân nặng: 75kg</p>
+            <p>Quê quán: Anh</p>
+          </div>
+
+          <img
+            class="player"
+            src="./anh/anh_doihinh/anhcauthu/23-Luke-Shaw1751371146122.png"
+          />
+        </div>
+      </div>
+      <div class="card">
+        <div class="header" onclick="toggleCard(this)">
+          <img class="avatar" src="./anh/anh_doihinh/avt/dalot.png" />
+
+          <div class="number">2</div>
+
+          <div class="title">
+            <h2>Diogo Dalot</h2>
+            <span>Hậu vệ cánh phải</span>
+          </div>
+
+          <button>▼</button>
+        </div>
+
+        <div class="content">
+          <div class="info">
+            <p>Ngày sinh: 18/03/1999</p>
+            <p>Chiều cao: 1,84m</p>
+            <p>Cân nặng: 76kg</p>
+            <p>Quê quán: Bồ đào nha</p>
+          </div>
+
+          <img
+            class="player"
+            src="./anh/anh_doihinh/anhcauthu/20-Diogo-Dalot1751370735578.png"
+          />
+        </div>
+      </div>
+      <div class="card">
+        <div class="header" onclick="toggleCard(this)">
+          <img class="avatar" src="./anh/anh_doihinh/avt/heaven.png" />
+
+          <div class="number">26</div>
+
+          <div class="title">
+            <h2>Ayden Heaven</h2>
+            <span>Trung vệ lệch trái</span>
+          </div>
+
+          <button>▼</button>
+        </div>
+
+        <div class="content">
+          <div class="info">
+            <p>Ngày sinh: 22/09/2006</p>
+            <p>Chiều cao: 1,89m</p>
+            <p>Cân nặng: 69kg</p>
+            <p>Quê quán: Anh</p>
+          </div>
+
+          <img
+            class="player"
+            src="./anh/anh_doihinh/anhcauthu/26-Ayden-Heaven1751372132113.png"
+          />
+        </div>
+      </div>
+      <div class="card">
+        <div class="header" onclick="toggleCard(this)">
+          <img class="avatar" src="./anh/anh_doihinh/avt/mazraoul.png" />
+
+          <div class="number">3</div>
+
+          <div class="title">
+            <h2>Noussair Mazraoui</h2>
+            <span>Trung vệ lệch phải</span>
+          </div>
+
+          <button>▼</button>
+        </div>
+
+        <div class="content">
+          <div class="info">
+            <p>Ngày sinh: 14/11/1997</p>
+            <p>Chiều cao: 1,83m</p>
+            <p>Cân nặng: 65kg</p>
+            <p>Quê quán: Maroc</p>
+          </div>
+
+          <img
+            class="player"
+            src="./anh/anh_doihinh/anhcauthu/3-Noussair-Mazraoui1751367211444.png"
+          />
+        </div>
+      </div>
+      <div class="card">
+        <div class="header" onclick="toggleCard(this)">
+          <img class="avatar" src="./anh/anh_doihinh/avt/lammens.png" />
+
+          <div class="number">31</div>
+
+          <div class="title">
+            <h2>Senne Lammens</h2>
+            <span>Thủ môn</span>
+          </div>
+
+          <button>▼</button>
+        </div>
+
+        <div class="content">
+          <div class="info">
+            <p>Ngày sinh: 07/07/2002</p>
+            <p>Chiều cao: 1,93m</p>
+            <p>Cân nặng: 80kg</p>
+            <p>Quê quán: Bỉ</p>
+          </div>
+
+          <img class="player" src="./anh/anh_doihinh/anhcauthu/lammens.png" />
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h2>Football Club</h2>
+          <p>Sân nhà: Old Trafford</p>
+          <p>Thành lập: 1878</p>
+          <p>Email: services@manutd.co.uk</p>
+        </div>
+
+        <div class="footer-col">
+          <h3>CLB</h3>
+          <a href="../index.html">Trang chủ</a>
+          <a href="gioithieu.html">Giới thiệu</a>
+          <a href="doihinh.html">Đội hình</a>
+          <a href="../thidau&lienhe/trandau.html">Thi đấu</a>
+        </div>
+
+        <div class="footer-col">
+          <h3>Dịch vụ</h3>
+          <a href="../combo_video_thi/thongbao.html">Video</a>
+          <a href="../thidau&lienhe/lienhe.html">Liên hệ</a>
+        </div>
+
+        <div class="footer-col">
+          <h3>Theo dõi</h3>
+          <div class="social">
+            <a href="https://www.facebook.com/manchesterunited" target="_blank"
+              ><img src="./anh/anhfooter/fb.png" id="fb" style="width: 30%"
+            /></a>
+            <a href="https://www.youtube.com/channel/UC6yW44UGJJBvYTlfC7CRg2Q" target="_blank"
+              ><img src="./anh/anhfooter/youtube.png" alt=""
+            /></a>
+            <a href="https://x.com/ManUtd_AR" target="_blank"
+              ><img src="./anh/anhfooter/x.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © 2026 Football Club. All rights reserved.
+      </div>
+    </footer>
+    <script src="./js/scripst.js"></script>
+  </body>
+</html>

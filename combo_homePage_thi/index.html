@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./tbapwebmu/css/stylee.css">
+    <link rel="stylesheet" href="homePage.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- MỞ -->
+    <header class="Banner">
+      <div class="logo">
+        <img src="./img/anh_Mu.png" alt="logo" />
+      </div>
+      <nav id="nav">
+        <ul>
+          <li><a href="index.html">Trang Chủ</a></li>
+          <li><a href="./tbapwebmu/gioithieu.html">Giới Thiệu</a></li>
+          <li><a href="./tbapwebmu/doihinh.html">Đội Hình</a></li>
+          <li><a href="./thidau&lienhe/trandau.html">Thi Đấu</a></li>
+          <li><a href="./combo_video_thi/thongbao.html">Video</a></li>
+          <li><a href="./thidau&lienhe/lienhe.html">Liên Hệ</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="overlay" onclick="toggleMenu()"></div>
+    </header>
+
+    <main>
+      <!-- ================= HERO ================= -->
+
+      <section class="hero">
+        <div class="hero-overlay">
+          <div class="hero-content"></div>
+        </div>
+      </section>
+
+      <!-- NEWS -->
+      <section class="news">
+        <div class="title">
+          <h2>TIN MỚI NHẤT</h2>
+        </div>
+
+        <div class="news-container">
+          <a href="./tintuc.html" class="news-card">
+            <div class="news-image">
+              <img src="./img/anmung.jpg" />
+            </div>
+
+            <div class="news-content">
+              <h3>Manchester United thắng lớn</h3>
+
+              <p>Quỷ đỏ tiếp tục phong độ ấn tượng tại Premier League...</p>
+            </div>
+          </a>
+
+          <a href="./tintuc.html" class="news-card">
+            <div class="news-image">
+              <img src="./img/doihinhNews.webp" />
+            </div>
+
+            <div class="news-content">
+              <h3>HLV công bố đội hình mới</h3>
+
+              <p>Những thay đổi chiến thuật đáng chú ý mùa giải này...</p>
+            </div>
+          </a>
+
+          <a href="./tintuc.html" class="news-card">
+            <div class="news-image">
+              <img src="./img/lichthidau.jpg" />
+            </div>
+
+            <div class="news-content">
+              <h3>Lịch thi đấu tháng mới</h3>
+
+              <p>Các trận cầu đỉnh cao sắp diễn ra tại Old Trafford...</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- MATCH -->
+      <section class="match-section">
+        <div class="title">
+          <h2>TRẬN ĐẤU TIẾP THEO</h2>
+        </div>
+
+        <div class="match-box">
+          <div class="club">
+            <img src="./img/anh_Mu.png" />
+            <h3>Man United</h3>
+          </div>
+
+          <div class="vs">
+            <h1>VS</h1>
+            <p>20:00 - Old Trafford</p>
+          </div>
+
+          <div class="club">
+            <img src="./img/Arsenal.png" />
+            <h3>Arsenal</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-menu">
+        <!-- GIỚI THIỆU -->
+
+        <div class="home-card">
+          <img src="./img/gioithieu.jpg" alt="" />
+
+          <div class="home-content">
+            <h2>GIỚI THIỆU</h2>
+
+            <p>
+              Manchester United - biểu tượng bóng đá vĩ đại với lịch sử huy
+              hoàng tại Old Trafford.
+            </p>
+
+            <a href="./tbapwebmu/gioithieu.html"> Xem thêm </a>
+          </div>
+        </div>
+
+        <!-- ĐỘI HÌNH -->
+
+        <div class="home-card reverse">
+          <img src="./img/doihinh.jpg" alt="" />
+
+          <div class="home-content">
+            <h2>ĐỘI HÌNH</h2>
+
+            <p>
+              Khám phá đội hình Manchester United mùa giải mới với các ngôi sao
+              hàng đầu.
+            </p>
+
+            <a href="./tbapwebmu/doihinh.html"> Xem thêm </a>
+          </div>
+        </div>
+
+        <!-- THI ĐẤU -->
+
+        <div class="home-card">
+          <img src="./img/thidau.jpg" alt="" />
+
+          <div class="home-content">
+            <h2>THI ĐẤU</h2>
+
+            <p>Theo dõi lịch thi đấu, kết quả và hành trình của Quỷ đỏ.</p>
+
+            <a href="./thidau&lienhe/trandau.html"> Xem thêm </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- SPONSORS -->
+
+    <section class="sponsor-section">
+      <h2>Global Partners</h2>
+
+      <div class="sponsor-container">
+        <div class="sponsor-box">
+          <img src="./img/sponsor1.jpg" alt="" />
+        </div>
+
+        <div class="sponsor-box">
+          <img src="./img/sponsor2.jpg" alt="" />
+        </div>
+
+        <div class="sponsor-box">
+          <img src="./img/sponsor3.png" alt="" />
+        </div>
+
+        <div class="sponsor-box">
+          <img src="./img/sponsor4.png" alt="" />
+        </div>
+
+        <div class="sponsor-box">
+          <img src="./img/sponsor5.jpg" alt="" />
+        </div>
+
+        <div class="sponsor-box">
+          <img src="./img/sponsor6.png" alt="" />
+        </div>
+
+        <div class="sponsor-box">
+          <img src="./img/sponsor7.png" alt="" />
+        </div>
+
+        <div class="sponsor-box">
+          <img src="./img/sponsor8.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- KẾT -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h2>Football Club</h2>
+          <p>Sân nhà: Old Trafford</p>
+          <p>Thành lập: 1878</p>
+          <p>Email: services@manutd.co.uk</p>
+        </div>
+
+        <div class="footer-col">
+          <h3>CLB</h3>
+          <a href="index.html">Trang chủ</a>
+          <a href="./tbapwebmu/gioithieu.html">Giới thiệu</a>
+          <a href="./tbapwebmu/doihinh.html">Đội hình</a>
+          <a href="./thidau&lienhe/trandau.html">Thi đấu</a>
+        </div>
+
+        <div class="footer-col">
+          <h3>Dịch vụ</h3>
+          <a href="./combo_video_thi/thongbao.html">Video</a>
+          <a href="./thidau&lienhe/lienhe.html">Liên hệ</a>
+        </div>
+
+        <div class="footer-col">
+          <h3>Theo dõi</h3>
+          <div class="social">
+            <a href="https://www.facebook.com/manchesterunited" target="_blank"
+              ><img src="./tbapwebmu/anh/anhfooter/fb.png" style="width: 30%"
+            /></a>
+            <a
+              href="https://www.youtube.com/channel/UC6yW44UGJJBvYTlfC7CRg2Q"
+              target="_blank"
+              ><img src="./tbapwebmu/anh/anhfooter/youtube.png" alt=""
+            /></a>
+            <a href="https://x.com/ManUtd_AR" target="_blank"
+              ><img src="./tbapwebmu/anh/anhfooter/x.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © 2026 Football Club. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="homePage.js"></script>
+  </body>
+</html>

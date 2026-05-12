@@ -1,0 +1,533 @@
+html {
+    overflow-y: scroll;
+}
+
+/* ===== RESET + BODY ===== */
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 100px;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h3 {
+    color: black;
+    margin: 0;
+}
+/* ===== HEADER ===== */
+/*header*/
+.Banner a {
+  transition: 0.4s ease;
+}
+.Banner a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.Banner {
+  background-color: #b30000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  margin: 0 0 30px 0;
+  padding: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.match-page .Banner {
+  margin-bottom: 0;
+}
+
+.Banner ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-right: -15px;
+}
+
+.Banner ul li {
+  margin: 0 16px;
+}
+
+.logo img {
+  width: 70px;
+  margin-left: 5px;
+}
+/* ===== TAB MENU ===== */
+.tab-menu {
+    background: #ccc;
+}
+
+.tabs {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.tab {
+    flex: 1;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tab:hover {
+    background: #eee;
+}
+
+.tab.active {
+    background: #eee;
+}
+
+.indicator {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    width: calc(100% / 3);
+    background: #d9b500;
+    transition: transform 0.2s ease;
+}
+
+/* ===== MATCHES ===== */
+.matches {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 40px;
+}
+
+.match {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.match-info {
+    width: 35%;
+    margin-left: 50px;
+}
+
+.league {
+    font-weight: bold;
+    font-size: large;
+    color: black;
+}
+
+.time {
+    font-size: medium;
+    font-weight: bold;
+    color: black;
+}
+
+.match-team {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-right: 100px;
+}
+
+.team {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.team img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.team:first-child {
+    justify-content: flex-end;
+    text-align: right;
+    width: 250px;
+}
+
+.team:last-child {
+    justify-content: flex-start;
+    width: 250px;
+}
+
+.score {
+    color: black;
+    padding: 10px;
+    white-space: nowrap;
+}
+
+/* ===== TABLE ===== */
+.table-box {
+    margin: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.table-title {
+    background: #b30000;
+    padding: 20px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    min-width: 980px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ===== DROPDOWN ===== */
+.dropdown {
+    position: relative;
+    width: 220px;
+    font-size: 14px;
+    margin: 40px 50px;
+    margin-left: auto;
+
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    z-index: 1;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.dropdown-selected {
+    background: #d9d9d9;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.dropdown-selected::after {
+    content: "▼";
+    float: right;
+}
+
+.dropdown-list {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background: white;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.dropdown:hover .dropdown-list {
+    display: block;
+    border-color: rgb(178, 146, 4);
+}
+
+.dropdown-list a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-list a:hover {
+    background: #eee;
+}
+
+/* ===== CONTACT TABLE ===== */
+.title {
+    width: 100%;
+    border-collapse: collapse;
+    color: black;
+    border: 1px solid white;
+}
+
+.title th {
+    text-align: left;
+    padding: 20px;
+    background-color: lightgray;
+    border-top: 3px solid white;
+}
+
+.title td {
+    padding: 20px;
+    border-top: 3px solid white;
+}
+
+/* ===== RANKING TABLE ===== */
+.ranking {
+    width: 100%;
+    border-collapse: collapse;
+    color: black;
+    background-color: lightgray;
+    min-width: 980px;
+}
+
+.ranking th {
+    text-align: center;
+    padding: 14px 12px;
+    color: black;
+    white-space: nowrap;
+}
+
+.ranking td {
+    padding: 14px 12px;
+    border-top: 1px solid white;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.ranking th:nth-child(2),
+.ranking td:nth-child(2) {
+    text-align: left;
+}
+
+.ranking td:first-child,
+.ranking td:last-child {
+    font-weight: bold;
+}
+
+/* ===== CLUB ===== */
+.club {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.club img {
+    width: 45px;
+}
+
+.premlogo {
+    width: 50px;
+}
+
+.contactlogo {
+    width: 35px;
+}
+
+/*footer*/
+.footer {
+  background: #2a2a2a;
+  color: white;
+  padding: 50px;
+  width: 100%;
+  margin: 50px 0 0 0;
+  z-index: 1;
+}
+
+.footer-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 50px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.footer-col p {
+  margin: 6px 0;
+  color: #ccc;
+}
+.footer-col a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin: 6px 0;
+}
+.social {
+  display: flex;
+  gap: 15px;
+}
+.social a
+{
+  background-color: #3f3f3f;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;         
+  align-items: center;           
+  justify-content: center;  
+}
+.social a img
+{
+  width: 60%;
+}
+
+.social a:hover
+{
+  background-color: #b30000;
+  transition: 0.3s;
+}
+
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background: #fff;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.footer h2,
+.footer h3 {
+  margin: 0 0 14px;
+  line-height: 1.2;
+  color: white;
+}
+
+/* ===== MOBILE ===== */
+    @media (max-width: 768px) {
+    /* ===== HEADER ===== */
+    body {
+        padding: 0 10px;
+        padding-top: 100px;
+    }
+    .logo img
+    {
+        margin-left: 15px;
+    }
+    .menu-toggle {
+        display: flex;
+    }
+
+    #nav {
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 250px;
+        height: 100vh;
+        background: #8b0000;
+        transition: 0.3s;
+        z-index: 1;
+    }
+
+    #nav ul {
+        flex-direction: column;
+        gap: 20px;
+        padding-left: 20px;
+    }
+
+    #nav a {
+        color: white;
+    }
+
+    #nav.active {
+        right: 0;
+    }
+
+    .overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* ===== MAIN ===== */
+    .main{
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .match-page .main{
+        padding-top: 0;
+    }
+
+    .matches,
+    .table-box,
+    .dropdown{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .matches,
+    .table-box{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .dropdown{
+        width: 100%;
+        max-width: 320px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* bảng BXH */
+    .table-box{
+        overflow-x: auto;
+    }
+
+    table{
+        min-width: 600px;
+    }
+
+    /* trận đấu */
+    .match{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .match-info,
+    .match-team{
+        margin: 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .match-team{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .team:first-child,
+    .team:last-child{
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* ===== FOOTER ===== */
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+}
+

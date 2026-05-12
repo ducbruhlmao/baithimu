@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../tbapwebmu/css/animation_dh.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="match-page">
+    <header class="Banner">
+      <div class="logo">
+        <img src="../tbapwebmu/anh/anhheader/Man_Utd_FC_.svg.png" alt="" />
+      </div>
+      <nav id="nav">
+        <ul>
+            <li><a href="../index.html">Trang Chủ</a></li>
+            <li><a href="../tbapwebmu/gioithieu.html">Giới Thiệu</a></li>
+            <li><a href="../tbapwebmu/doihinh.html">Đội Hình</a></li>
+            <li><a href="trandau.html">Thi Đấu</a></li>
+            <li><a href="../combo_video_thi/thongbao.html">Video</a></li>
+            <li><a href="lienhe.html">Liên Hệ</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="overlay" onclick="toggleMenu()"></div>
+    </header>
+    <div class="main">
+        <div class="tab-menu">
+            <div class="tabs">
+                <div class="tab">TRẬN ĐẤU</div>
+                <div class="tab">KẾT QUẢ</div>
+                <div class="tab active">BẢNG XẾP HẠNG</div>
+                <div class="indicator"></div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="dropdown-selected">Premier League</div>
+            <div class="dropdown-list">
+                <a href="bxh.html">Premier League</a>
+                <a href="c1.html">Champion League</a>
+            </div>
+        </div>
+        <div class="table-box">
+            <div class="table-title">
+                <img src="Logo/premier.png" class="premlogo" alt="Premier League">
+                <span>Premier League</span>
+            </div>
+             <table class="ranking">
+                <thead>
+                <tr>
+                    <th>Hạng</th>
+                    <th>Câu lạc bộ</th>
+                    <th>Tr</th>
+                    <th>T</th>
+                    <th>H</th>
+                    <th>B</th>
+                    <th>BT</th>
+                    <th>BB</th>
+                    <th>HS</th>
+                    <th>Đ</th>
+                 </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td class="club"><img src="Logo/ARS.png" alt="Arsenal">Arsenal</td><td>31</td><td>22</td><td>6</td><td>3</td><td>68</td><td>24</td><td>+44</td><td>72</td></tr>
+                    <tr><td>2</td><td class="club"><img src="Logo/MNC.png" alt="Manchester City">Manchester City</td><td>31</td><td>21</td><td>7</td><td>3</td><td>74</td><td>28</td><td>+46</td><td>70</td></tr>
+                    <tr><td>3</td><td class="club"><img src="Logo/LIV.png" alt="Liverpool">Liverpool</td><td>31</td><td>20</td><td>8</td><td>3</td><td>70</td><td>30</td><td>+40</td><td>68</td></tr>
+                    <tr><td>4</td><td class="club"><img src="Logo/MNU.png" alt="Manchester United">Manchester United</td><td>31</td><td>17</td><td>7</td><td>7</td><td>55</td><td>38</td><td>+17</td><td>58</td></tr>
+                    <tr><td>5</td><td class="club"><img src="Logo/AST.png" alt="Aston Villa">Aston Villa</td><td>31</td><td>17</td><td>6</td><td>8</td><td>57</td><td>42</td><td>+15</td><td>57</td></tr>
+                    <tr><td>6</td><td class="club"><img src="Logo/CHE.png" alt="Chelsea">Chelsea</td><td>31</td><td>15</td><td>8</td><td>8</td><td>54</td><td>39</td><td>+15</td><td>53</td></tr>
+                    <tr><td>7</td><td class="club"><img src="Logo/NEW.png" alt="Newcastle United">Newcastle United</td><td>31</td><td>15</td><td>7</td><td>9</td><td>52</td><td>43</td><td>+9</td><td>52</td></tr>
+                    <tr><td>8</td><td class="club"><img src="Logo/BOU.png" alt="AFC Bournemouth">AFC Bournemouth</td><td>31</td><td>13</td><td>9</td><td>9</td><td>49</td><td>41</td><td>+8</td><td>48</td></tr>
+                    <tr><td>9</td><td class="club"><img src="Logo/BRI.png" alt="Brighton &amp; Hove Albion">Brighton &amp; Hove Albion</td><td>31</td><td>12</td><td>10</td><td>9</td><td>47</td><td>44</td><td>+3</td><td>46</td></tr>
+                    <tr><td>10</td><td class="club"><img src="Logo/FUL.png" alt="Fulham">Fulham</td><td>31</td><td>12</td><td>8</td><td>11</td><td>45</td><td>43</td><td>+2</td><td>44</td></tr>
+                    <tr><td>11</td><td class="club"><img src="Logo/BRF.png" alt="Brentford">Brentford</td><td>31</td><td>11</td><td>10</td><td>10</td><td>46</td><td>45</td><td>+1</td><td>43</td></tr>
+                    <tr><td>12</td><td class="club"><img src="Logo/TOT.png" alt="Tottenham Hotspur">Tottenham Hotspur</td><td>31</td><td>12</td><td>6</td><td>13</td><td>53</td><td>50</td><td>+3</td><td>42</td></tr>
+                    <tr><td>13</td><td class="club"><img src="Logo/CRY.png" alt="Crystal Palace">Crystal Palace</td><td>31</td><td>10</td><td>10</td><td>11</td><td>39</td><td>41</td><td>-2</td><td>40</td></tr>
+                    <tr><td>14</td><td class="club"><img src="Logo/EVE.png" alt="Everton">Everton</td><td>31</td><td>10</td><td>8</td><td>13</td><td>34</td><td>39</td><td>-5</td><td>38</td></tr>
+                    <tr><td>15</td><td class="club"><img src="Logo/LEE.png" alt="Leeds United">Leeds United</td><td>31</td><td>9</td><td>9</td><td>13</td><td>41</td><td>49</td><td>-8</td><td>36</td></tr>
+                    <tr><td>16</td><td class="club"><img src="Logo/WHU.png" alt="West Ham United">West Ham United</td><td>31</td><td>9</td><td>8</td><td>14</td><td>37</td><td>48</td><td>-11</td><td>35</td></tr>
+                    <tr><td>17</td><td class="club"><img src="Logo/WOL.png" alt="Wolverhampton">Wolverhampton</td><td>31</td><td>9</td><td>7</td><td>15</td><td>35</td><td>47</td><td>-12</td><td>34</td></tr>
+                    <tr><td>18</td><td class="club"><img src="Logo/NOT.png" alt="Nottingham Forest">Nottingham Forest</td><td>31</td><td>8</td><td>8</td><td>15</td><td>36</td><td>52</td><td>-16</td><td>32</td></tr>
+                    <tr><td>19</td><td class="club"><img src="Logo/SUN.png" alt="Sunderland">Sunderland</td><td>31</td><td>7</td><td>9</td><td>15</td><td>33</td><td>51</td><td>-18</td><td>30</td></tr>
+                    <tr><td>20</td><td class="club"><img src="Logo/BUR.png" alt="Burnley">Burnley</td><td>31</td><td>5</td><td>7</td><td>19</td><td>28</td><td>60</td><td>-32</td><td>22</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h2>Football Club</h2>
+          <p>Sân nhà: Old Trafford</p>
+          <p>Thành lập: 1878</p>
+          <p>Email: services@manutd.co.uk</p>
+        </div>
+
+        <div class="footer-col">
+          <h3>CLB</h3>
+          <a href="../index.html">Trang chủ</a>
+          <a href="../tbapwebmu/gioithieu.html">Giới thiệu</a>
+          <a href="../tbapwebmu/doihinh.html">Đội hình</a>
+          <a href="trandau.html">Thi đấu</a>
+        </div>
+
+        <div class="footer-col">
+          <h3>Dịch vụ</h3>
+          <a href="../combo_video_thi/thongbao.html">Video</a>
+          <a href="lienhe.html">Liên hệ</a>
+        </div>
+
+        <div class="footer-col">
+          <h3>Theo dõi</h3>
+          <div class="social">
+            <a href="https://www.facebook.com/manchesterunited" target="_blank"
+              ><img src="../tbapwebmu/anh/anhfooter/fb.png" id="fb" style="width: 30%"
+            /></a>
+            <a
+              href="https://www.youtube.com/channel/UC6yW44UGJJBvYTlfC7CRg2Q"
+              target="_blank"
+              ><img src="../tbapwebmu/anh/anhfooter/youtube.png" alt=""
+            /></a>
+            <a href="https://x.com/ManUtd_AR" target="_blank"
+              ><img src="../tbapwebmu/anh/anhfooter/x.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © 2026 Football Club. All rights reserved.
+      </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,68 @@
+.Banner a {
+  transition: 0.4s ease;
+}
+
+ul:hover a:hover {
+  color: #ffd400;
+}
+
+
+button {
+  transition: 0.4s;
+}
+
+.card.active button {
+  transform: rotate(180deg);
+}
+
+.content {
+  transition: 0.4s;
+}
+
+.player {
+  transition: 1s;
+}
+
+.card.active .player {
+  bottom: -5px;
+}
+
+.card.active {
+  animation: openCard 0.8s forwards;
+}
+
+.card.close {
+  animation: closeCard 0.8s forwards;
+}
+
+.menu button {
+  transition: 0.6s;
+}
+
+.menu button.active {
+  transform: scale(1.1);
+}
+
+.menu button:hover {
+  background-color: #b30000;
+}
+
+.menu button.active {
+  background: #b30000;
+  color: #ffd400;
+}
+
+
+.Banner ul {
+  transition: 0.4s;
+}
+
+@keyframes openCard {
+  from { height: 100px; }
+  to { height: 420px; }
+}
+
+@keyframes closeCard {
+  from { height: 420px; }
+  to { height: 100px; }
+}

@@ -1,0 +1,119 @@
+.players {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  width: 900px;
+  align-items: start;
+}
+
+.card {
+  border-radius: 16px;
+  overflow: visible;
+  position: relative;
+  height: 100px;
+}
+
+.header {
+  background: #b30000;
+  color: #ffd400;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.number {
+  font-size: 60px;
+  color: #ffd400;
+  font-weight: bold;
+}
+
+.avatar {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+}
+
+.title {
+  flex: 1;
+}
+
+.title h2 {
+  margin: 0;
+  color: #ffd400;
+  font-size: 22px;
+}
+
+.title span {
+  font-size: 14px;
+  opacity: 0.8;
+  color: white;
+}
+
+button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: #ffd400;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.content {
+  background: #ddd;
+  padding: 30px;
+  position: relative;
+  opacity: 0;
+  max-height: 0;
+  overflow: visible;
+  border-radius: 0 0 16px 16px;
+}
+
+.card.active .content {
+  opacity: 1;
+  max-height: 300px;
+}
+
+.info {
+  line-height: 2;
+  font-size: 15px;
+}
+
+.player {
+  width: 220px;
+  position: absolute;
+  right: 20px;
+  bottom: -60px;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.menu {
+  margin-bottom: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.menu button {
+  padding: 10px 20px;
+  width: 200px;
+  font-size: 16px;
+  border: none;
+  background: black;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+#coach {
+  display: none;
+}
+
+
+

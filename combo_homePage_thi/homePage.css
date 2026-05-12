@@ -1,0 +1,494 @@
+body {
+  font-family: sans-serif;
+  background: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  align-items: center;
+  overflow-x: hidden;
+}
+.Banner {
+  margin: 0 !important;
+}
+ul:hover a:hover {
+  color: #ffd400;
+}
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  body {
+    padding: 0 10px;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+
+  #nav {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100vh;
+    background: #8b0000;
+    transition: 0.3s;
+    z-index: 1;
+  }
+
+  #nav ul {
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 20px;
+  }
+
+  #nav a {
+    color: white;
+  }
+
+  #nav.active {
+    right: 0;
+  }
+
+  .overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* ================= HERO ================= */
+
+.hero {
+  height: 100vh;
+
+  background-image: url("./img/hero.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  position: relative;
+}
+
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  text-align: center;
+  color: white;
+  margin-top: 150px;
+}
+
+.hero-content h1 {
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.hero-content button {
+  padding: 15px 35px;
+
+  border: none;
+
+  background: #b30000;
+  color: white;
+
+  font-size: 18px;
+  font-weight: bold;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.hero-content button:hover {
+  background: #ff0000;
+}
+
+/* ================= TITLE ================= */
+
+.title {
+  margin-bottom: 40px;
+}
+
+.title h2 {
+  font-size: 40px;
+  color: #b30000;
+  text-align: center;
+}
+
+/* ================= NEWS ================= */
+
+.news {
+  width: 90%;
+  margin: 80px auto;
+}
+
+.news-container {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 30px;
+}
+
+.news-card {
+  background: white;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+
+  transition: 0.3s;
+
+  text-decoration: none;
+  color: inherit;
+}
+
+.news-card:hover {
+  transform: translateY(-10px);
+}
+
+.news-image img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.news-content {
+  padding: 20px;
+}
+
+.news-content h3 {
+  margin-bottom: 10px;
+  color: #b30000;
+}
+
+.news-content p {
+  color: #555;
+  line-height: 1.5;
+}
+
+/* ================= MATCH ================= */
+
+.match-section {
+  background: #111;
+
+  padding: 80px 20px;
+
+  color: white;
+}
+
+.match-box {
+  max-width: 900px;
+
+  margin: auto;
+
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+
+  background: #1e1e1e;
+
+  padding: 40px;
+
+  border-radius: 20px;
+}
+
+.club {
+  text-align: center;
+}
+
+.club img {
+  width: 120px;
+  margin-bottom: 15px;
+}
+
+.club h3 {
+  font-size: 30px;
+}
+
+.vs {
+  text-align: center;
+}
+
+.vs h1 {
+  font-size: 60px;
+  color: #b30000;
+}
+
+.vs p {
+  margin-top: 10px;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
+  .hero-content p {
+    font-size: 20px;
+  }
+
+  .news-container {
+    grid-template-columns: 1fr;
+  }
+
+  .video-container {
+    grid-template-columns: 1fr;
+  }
+
+  .match-box {
+    flex-direction: column;
+
+    gap: 30px;
+  }
+}
+
+/* ================= HOME MENU ================= */
+
+.home-menu {
+  width: 90%;
+
+  margin: 100px auto;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 70px;
+}
+
+/* card */
+
+.home-card {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 40px;
+
+  padding: 40px;
+
+  border-radius: 25px;
+
+  background: #ececec;
+
+  border: 1px solid #e5e5e5;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+
+  transition: 0.3s;
+}
+
+.home-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* đảo layout */
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+/* image */
+
+.home-card img {
+  width: 55%;
+
+  height: 420px;
+
+  object-fit: cover;
+
+  border-radius: 20px;
+
+  transition: 0.3s;
+}
+
+.home-card img:hover {
+  transform: scale(1.02);
+}
+
+/* content */
+
+.home-content {
+  flex: 1;
+}
+
+.home-content h2 {
+  font-size: 40px;
+
+  color: #b30000;
+
+  margin-bottom: 20px;
+}
+
+.home-content p {
+  font-size: 22px;
+
+  line-height: 1.7;
+
+  margin-bottom: 30px;
+
+  color: #444;
+}
+
+/* button */
+
+.home-content a {
+  display: inline-block;
+
+  padding: 14px 35px;
+
+  background: #b30000;
+
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 10px;
+
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+.home-content a:hover {
+  background: #ff0000;
+
+  transform: translateY(-3px);
+}
+
+/* ================= SPONSOR ================= */
+
+.sponsor-section {
+  width: 90%;
+
+  margin: 100px auto;
+
+  text-align: center;
+}
+
+.sponsor-section h2 {
+  font-size: 30px;
+
+  color: #b30000;
+
+  margin-bottom: 40px;
+}
+
+.sponsor-container {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 10px;
+
+  flex-wrap: wrap;
+}
+
+.sponsor-box {
+  height: 100px;
+
+  padding: 10px;
+
+  border: 1px solid #ececec;
+
+  border-radius: 14px;
+
+  background: white;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  transition: 0.3s;
+}
+
+.sponsor-box img {
+  width: 100px;
+
+  object-fit: contain;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .sponsor-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sponsor-box {
+    height: 110px;
+  }
+
+  .sponsor-box img {
+    width: 90px;
+  }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .menu {
+    margin-top: 10px;
+  }
+
+  .menu a {
+    font-size: 16px;
+  }
+
+  .submenu {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .home-card,
+  .reverse {
+    flex-direction: column;
+  }
+
+  .home-card img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .home-content {
+    text-align: center;
+  }
+
+  .home-content h2 {
+    font-size: 38px;
+  }
+}

@@ -110,7 +110,7 @@
     width: 100%;
   }
   .card.active .content {
-  width: 95%;
+  width: 92%;
    padding: 10px;
     margin: 0 15px;
 }
@@ -130,7 +130,7 @@
   }
 
   .player {
-    width: 130px;
+    width: 140px;
     right: 5px;
     bottom: -20px;
   }

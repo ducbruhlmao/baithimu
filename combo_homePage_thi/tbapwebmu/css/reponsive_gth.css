@@ -63,3 +63,67 @@
     grid-template-columns: 1fr;
   }
 }
+@media (max-width: 480px){
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  #nav {
+    position: fixed;
+    top: 0;
+    right: -220px;
+    width: 220px;
+    height: 100vh;
+    background: #8b0000;
+    transition: right 0.3s ease;
+    z-index: 1000;
+  }
+
+  #nav ul {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  #nav a {
+    color: white;
+    font-size: 14px;
+  }
+
+  #nav.active {
+    right: 0;
+  }
+
+  .overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .anh_vodich img {
+    width: 100%;
+  }
+
+  .gioithieu,
+  .danhhieu,
+  .khoanhkhac,
+  .baotang,
+  .svd {
+    padding: 15px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  /* chữ nhỏ hơn cho mobile nhỏ */
+  h1, h2 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+}

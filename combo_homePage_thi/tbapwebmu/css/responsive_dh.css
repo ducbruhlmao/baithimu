@@ -103,7 +103,8 @@
     padding: 8px 5px;
     font-size: 12px;
     white-space: nowrap;
-    width: 60%;
+    width: 150px;
+    margin: 5px;
   }
 
   .players {

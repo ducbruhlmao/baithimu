@@ -1,11 +1,12 @@
 @media (max-width: 768px) {
-  *{
+  * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
   }
   body {
-    padding: 10px;
-      overflow-x: hidden;
-      max-width: 100%;
+    overflow-x: hidden;
+    width: 100%;
   }
   .players {
     grid-template-columns: 1fr;

@@ -9,16 +9,17 @@
     width: 100%;
   }
 
-  .menu button {
-    padding: 8px 14px;
-    font-size: 15px;
-  }
   .menu {
+    display: flex;
     width: 100%;
+    gap: 0;
   }
 
   .menu button {
     flex: 1;
+    padding: 10px;
+    font-size: 14px;
+    white-space: nowrap;
   }
   .players {
     grid-template-columns: 1fr;

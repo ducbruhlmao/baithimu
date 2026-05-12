@@ -83,7 +83,7 @@
   }
 }
 
-@media (max-width: 480px){
+@media (max-width: 480px) {
   * {
     margin: 0;
     padding: 0;
@@ -93,16 +93,17 @@
     overflow-x: hidden;
     width: 100%;
   }
-  .menu{
-    display:flex;
-    width:100%;
+  .menu {
+    display: flex;
+    width: 100%;
   }
 
-  .menu button{
-    flex:1;
-    padding:8px 5px;
-    font-size:12px;
-    white-space:nowrap;
+  .menu button {
+    flex: 1;
+    padding: 8px 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    width: 60%;
   }
 
   .players {

@@ -105,8 +105,13 @@
     white-space: nowrap;
     width: 150px;
     margin: 5px;
+    gap: 0;
   }
-
+  .player
+  {
+    margin: 5px;
+    width: 170px;
+  }
   .players {
     grid-template-columns: 1fr;
     width: 100%;
